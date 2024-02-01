@@ -4,7 +4,6 @@ export default function HomeHeader() {
   return (
     <div className="absolute flex h-32 w-full flex-col object-contain md:h-64">
       <Image
-        className="w-full"
         src="/images/homeBackground.jpeg"
         alt="Background"
         layout="fill"

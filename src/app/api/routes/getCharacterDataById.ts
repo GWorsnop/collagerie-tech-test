@@ -49,7 +49,7 @@ const query = `
 `;
 
 interface getCharacterDataByIdProps {
-  id: String;
+  id: string | string[];
 }
 
 export const getCharacterDataById = async ({
@@ -78,7 +78,7 @@ export const getCharacterDataById = async ({
           noOfCharacters: episode.characters.length,
           episode: episode.episode,
         };
-      }
+      },
     );
 
     const locationInfo: ILocation = {

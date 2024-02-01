@@ -22,24 +22,22 @@ function HomePage() {
 
   if (isLoading) {
     return (
-      <div className="w-screen text-center pt-40">
-        <h3 className="text-1xl text-black font-semibold">
+      <div className="absolute top-64 flex w-screen text-center text-white">
+        <h3 className="text-1xl font-semibold text-black">
           Home Page Loading ...
         </h3>
-        <br />
-        <p className="loader"></p>
       </div>
     );
   } else
     return (
-      <>
-        <div className="relative w-screen grid grid-cols-2 gap-10 lg:grid-cols-6 px-12 pt-44">
+      <div className="relative flex flex-col items-center pt-24 md:pt-44">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5 lg:gap-10 xl:grid-cols-6">
           {characters &&
             characters.map((character: ICharacterCore) => {
               return (
                 <div
                   key={character.id}
-                  className="inline-block w-40 text-center"
+                  className="flex w-40 flex-col items-center text-center"
                 >
                   <img
                     className="image rounded-lg"
@@ -47,8 +45,8 @@ function HomePage() {
                     src={character.avatar}
                     alt={character.name}
                   ></img>
-                  <div className="w-40 text-xs flex flex-col">
-                    <ul className="w-full flex flex-col justify-around py-2 h-24">
+                  <div className="flex w-40 flex-col text-xs">
+                    <ul className="flex h-24 w-full flex-col justify-around py-2">
                       <li className="flex w-full justify-start gap-2">
                         <p className="font-semibold">Name:</p>
                         <p className="text-start">{character.name}</p>
@@ -66,7 +64,7 @@ function HomePage() {
                       href={`/character/${character.id}`}
                       className="w-full"
                     >
-                      <button className="w-full h-8 bg-yellow-300 hover:bg-yellow-400 text-sm rounded-sm">
+                      <button className="h-8 w-full rounded-sm bg-yellow-300 text-sm hover:bg-yellow-400">
                         See more
                       </button>
                     </Link>
@@ -75,7 +73,7 @@ function HomePage() {
               );
             })}
         </div>
-      </>
+      </div>
     );
 }
 

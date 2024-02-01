@@ -47,15 +47,15 @@ function HomePage() {
                   ></img>
                   <div className="flex w-40 flex-col text-xs">
                     <ul className="flex h-24 w-full flex-col justify-around py-2">
-                      <li className="flex w-full justify-start gap-2">
+                      <li className="flex w-full justify-start gap-1">
                         <p className="font-semibold">Name:</p>
                         <p className="text-start">{character.name}</p>
                       </li>
-                      <li className="flex w-full justify-start gap-2">
+                      <li className="flex w-full justify-start gap-1">
                         <p className="font-semibold">Gender:</p>
                         <p>{character.gender}</p>
                       </li>
-                      <li className="flex w-full justify-start gap-2">
+                      <li className="flex w-full justify-start gap-1">
                         <p className="font-semibold">Species:</p>
                         <p>{character.species}</p>
                       </li>

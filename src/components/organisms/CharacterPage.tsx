@@ -23,7 +23,7 @@ export default function CharacterPage() {
       <div className="w-full">
         {character ? (
           <>
-            <div className="relative flex flex-col items-center pt-24 text-white md:flex-row md:pl-20 md:pt-44">
+            <div className="relative flex flex-col items-center pt-24 text-white md:flex-row md:pl-10 md:pt-44">
               <div className="flex h-40 w-40 md:h-64 md:w-64">
                 <Image
                   height="256"

@@ -8,7 +8,7 @@ Hosted Site: https://gworsnop-collagerie-tech-test.vercel.app/
 
 This is a Full-Stack application that utilises GraphQL on the backend and a NextJS frontend in order to obtain data from the Rick and Morty API and display it responsively.
 
-- The backend retreives all Alive Morty character from the API and formats this information to match the types provided in this repository.
+- The backend retrieves all Alive Morty characters from the API and formats this information to match the types provided in this repository.
 
 - The front end follows wireframes provided within this repository to display the information.
 
@@ -18,7 +18,7 @@ This is a Full-Stack application that utilises GraphQL on the backend and a Next
 
 ## How to use the site
 
-At the application's homepage, you will intially be sent to an page displaying different Morty characters and some information about them. Click on the "See More" button to got a new page to find out more information about the character.
+At the application's homepage, you will initially be sent to a page displaying different Morty characters and some information about them. Click on the "See More" button to go to a new page to find out more information about the character.
 
 ---
 
